@@ -15,7 +15,6 @@ Plug 'othree/html5.vim'
 Plug 'ap/vim-css-color'
 Plug 'gcorne/vim-sass-lint'
 Plug 'itchyny/calendar.vim'
-Plug 'blueyed/vim-diminactive'
 Plug 'ntpeters/vim-airline-colornum'
 Plug 'AndrewRadev/splitjoin.vim'
 
@@ -136,9 +135,6 @@ map <C-f> :Rgrep<cr>
 let Grep_Default_Filelist = '*.*'
 let Grep_Skip_Files = '*.log *.sql *.png *.jpg *.jpeg *.gif'
 let Grep_Skip_Dirs = '.git tmp system coverage log solr public _site node_modules'
-
-let g:diminactive_use_colorcolumn = 0
-let g:diminactive_use_syntax = 1
 
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
