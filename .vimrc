@@ -53,7 +53,7 @@ call plug#end()
 " Vim
 colorscheme monokai
 " colo railscasts                 " Theme
-set guifont=Monospace\ 12         " Font
+set guifont=Monospace\ 11         " Font
 set expandtab ts=2 sw=2 ai        " Two spaces insted tab
 set showtabline=2                 " Always shows tabs on top
 set backspace=indent,eol,start    " Intuitive backspacing.
@@ -91,6 +91,8 @@ set noballooneval
 setlocal balloonexpr=
 set balloondelay=100000
 
+execute pathogen#infect()
+
 autocmd BufWritePre *.* :%s/\s\+$//e
 " autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml,*.slim,*.erb,*.css,*.html,*.yml} :%s/\s\+$//e
 map <C-s> :w<cr>
@@ -102,7 +104,7 @@ vnoremap > >gv
 cmap w!! %!sudo tee > /dev/null %
 " autocmd! bufwritepost .vimrc nested source %
 inoremap <c-x><c-]> <c-]>
-let g:webdevicons_enable_nerdtree = 0
+let g:webdevicons_enable_nerdtree = 1
 let g:webdevicons_enable_airline_statusline = 1
 let g:webdevicons_enable_airline_tabline = 1
 
@@ -153,6 +155,9 @@ map <C-c> <esc>gcc<end>
 map <C-x> <esc>gcu<end>
 vmap <C-c> gc
 map cp "+y<CR>
+
+" NERDTree
+map <F2> :NERDTreeToggle<cr>
 
 " Rails
 map gV :Eview<CR>
