@@ -51,7 +51,8 @@ Plug 'mhinz/vim-startify'
 call plug#end()
 
 " Vim
-colo railscasts                   " Theme
+colorscheme monokai
+" colo railscasts                 " Theme
 set guifont=Monospace\ 12         " Font
 set expandtab ts=2 sw=2 ai        " Two spaces insted tab
 set showtabline=2                 " Always shows tabs on top
