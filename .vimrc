@@ -142,7 +142,7 @@ let g:calendar_google_task = 1
 " CtrlP
 let g:ctrlp_map = '<A-o>'
 let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|tmp|coverage|log|node_modules)$'
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:10'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:15,results:15'
 
 nnoremap <silent> <S-tab> :CtrlPBuffer<CR>
 
