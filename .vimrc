@@ -46,6 +46,7 @@ Plug 'w0rp/ale'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rhysd/vim-crystal'
 Plug 'mhinz/vim-startify'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -154,6 +155,10 @@ map cp "+y<CR>
 
 " NERDTree
 map <F2> :NERDTreeToggle<cr>
+
+" GitGutter
+set updatetime=100
+let g:gitgutter_map_keys = 0
 
 " Rails
 map gV :Eview<CR>
