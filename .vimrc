@@ -46,13 +46,14 @@ Plug 'w0rp/ale'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rhysd/vim-crystal'
 Plug 'mhinz/vim-startify'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
 " Vim
 colorscheme monokai
 " colo railscasts                 " Theme
-set guifont=Monospace\ 11         " Font
+set guifont=Monospace\ 10         " Font
 set expandtab ts=2 sw=2 ai        " Two spaces insted tab
 set showtabline=2                 " Always shows tabs on top
 set backspace=indent,eol,start    " Intuitive backspacing.
@@ -142,7 +143,7 @@ let g:calendar_google_task = 1
 " CtrlP
 let g:ctrlp_map = '<A-o>'
 let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|tmp|coverage|log|node_modules)$'
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:10,results:10'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:15,results:15'
 
 nnoremap <silent> <S-tab> :CtrlPBuffer<CR>
 
@@ -154,6 +155,11 @@ map cp "+y<CR>
 
 " NERDTree
 map <F2> :NERDTreeToggle<cr>
+map gt   :NERDTreeFind<cr>
+
+" GitGutter
+set updatetime=100
+let g:gitgutter_map_keys = 0
 
 " Rails
 map gV :Eview<CR>
