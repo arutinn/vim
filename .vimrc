@@ -155,6 +155,7 @@ map cp "+y<CR>
 
 " NERDTree
 map <F2> :NERDTreeToggle<cr>
+map gt   :NERDTreeFind<cr>
 
 " GitGutter
 set updatetime=100
