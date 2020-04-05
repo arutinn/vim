@@ -155,6 +155,7 @@ map cp "+y<CR>
 " NERDTree
 map <F2> :NERDTreeToggle<cr>
 map gt   :NERDTreeFind<cr>
+let NERDTreeAutoDeleteBuffer = 1
 
 " GitGutter
 set updatetime=100
