@@ -82,7 +82,7 @@ set nocursorcolumn
 set nocursorline
 syntax sync minlines=256
 set synmaxcol=300
-" set clipboard=unnamed
+set clipboard=unnamedplus
 " set noballooneval
 filetype plugin on                " Turn on file type detection.
 filetype indent on                " Turn on file indent detection.
@@ -123,7 +123,6 @@ inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 inoremap <C-e>     <Esc>:q!<CR>i
-
 
 " ALE
 let g:ale_fix_on_save = 1
