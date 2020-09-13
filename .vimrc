@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Plugins
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'kchmck/vim-coffee-script'
 Plug 'slim-template/vim-slim'
 Plug 'pangloss/vim-javascript'
@@ -50,7 +51,8 @@ Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Vim
-colorscheme monokai
+set background=dark
+colorscheme PaperColor
 " colo railscasts                 " Theme
 set guifont=Monospace\ 10         " Font
 set expandtab ts=2 sw=2 ai        " Two spaces insted tab
