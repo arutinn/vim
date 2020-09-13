@@ -54,7 +54,7 @@ call plug#end()
 set background=dark
 colorscheme PaperColor
 " colo railscasts                 " Theme
-set guifont=Monospace\ 10         " Font
+set guifont=Monospace\ 13         " Font
 set expandtab ts=2 sw=2 ai        " Two spaces insted tab
 set showtabline=2                 " Always shows tabs on top
 set backspace=indent,eol,start    " Intuitive backspacing.
